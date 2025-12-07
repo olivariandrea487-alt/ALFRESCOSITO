@@ -7,8 +7,11 @@ export default defineConfig({
     react(),
     {
       name: 'remove-bolt-badge',
-      transformIndexHtml(html) {
-        return html.replace(/<script[^>]*bolt\.new\/badge\.js[^>]*><\/script>/gi, '');
+      transformIndexHtml: {
+        order: 'post',
+        handler(html) {
+          return html.replace(/<script[^>]*bolt\.new[^>]*><\/script>/gi, '');
+        },
       },
     },
   ],

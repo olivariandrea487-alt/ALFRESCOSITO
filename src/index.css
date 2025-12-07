@@ -20,6 +20,21 @@
     transform: translateZ(0);
   }
 
+  [id*="bolt"],
+  [class*="bolt"],
+  iframe[src*="bolt.new"],
+  script[src*="bolt.new"],
+  div[style*="z-index: 2147483647"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    position: absolute !important;
+    left: -9999px !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     @apply font-display font-bold;
   }
