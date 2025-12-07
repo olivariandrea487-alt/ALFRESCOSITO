@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import SourceProtection from './components/SourceProtection';
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SourceProtection />
       <Navbar scrolled={scrolled} mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
 
       <main>
