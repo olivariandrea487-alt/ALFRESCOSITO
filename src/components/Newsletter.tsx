@@ -1,11 +1,6 @@
 import { useState } from 'react';
 import { Mail, CheckCircle, AlertCircle } from 'lucide-react';
-import { createClient } from '@supabase/supabase-js';
-
-const supabase = createClient(
-  import.meta.env.VITE_SUPABASE_URL,
-  import.meta.env.VITE_SUPABASE_ANON_KEY
-);
+import { supabase } from '../lib/supabase';
 
 export default function Newsletter() {
   const [email, setEmail] = useState('');
@@ -16,6 +11,12 @@ export default function Newsletter() {
     e.preventDefault();
     setStatus('loading');
     setMessage('');
+
+    if (!supabase) {
+      setStatus('error');
+      setMessage('Servizio temporaneamente non disponibile. Riprova più tardi.');
+      return;
+    }
 
     try {
       const { error } = await supabase
