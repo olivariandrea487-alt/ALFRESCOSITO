@@ -103,7 +103,7 @@ export default function Hero() {
           </a>
           <a
             href="#about"
-            className="border-2 border-[#2f3031] text-[#2f3031] px-8 py-3 rounded-full text-base font-bold hover:bg-[#2f3031] hover:text-white transition-all duration-500 shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-0.5"
+            className="bg-[#2f3031] text-white px-8 py-3 rounded-full text-base font-bold hover:bg-[#248acc] transition-all duration-500 shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-0.5"
           >
             Chi Siamo
           </a>
