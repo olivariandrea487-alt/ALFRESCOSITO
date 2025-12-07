@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased font-sans;
+    font-feature-settings: 'kern' 1, 'liga' 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: always;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
+  }
+
+  * {
+    @apply transition-colors duration-300 ease-out;
+  }
+}
+
+@layer utilities {
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes floatDelayed {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+
+  @keyframes floatSlow {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: floatDelayed 7s ease-in-out infinite;
+    animation-delay: 1s;
+  }
+
+  .animate-float-slow {
+    animation: floatSlow 8s ease-in-out infinite;
+    animation-delay: 2s;
+  }
+}
