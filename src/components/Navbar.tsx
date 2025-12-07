@@ -24,27 +24,27 @@ export default function Navbar({ scrolled, mobileMenuOpen, setMobileMenuOpen }: 
               src={logoAlfresco}
               alt="Al Fresco"
               className={`transition-all duration-500 ${
-                scrolled ? 'h-12' : 'h-16'
+                scrolled ? 'h-12 lg:h-14' : 'h-16 lg:h-[4.5rem]'
               } group-hover:scale-105`}
             />
           </a>
 
-          <div className="hidden md:flex items-center gap-10">
+          <div className="hidden md:flex items-center gap-10 lg:gap-11">
             <a
               href="#home"
-              className="text-base font-semibold transition-all duration-300 text-gray-800 hover:text-[#248acc]"
+              className="text-base lg:text-lg font-semibold transition-all duration-300 text-gray-800 hover:text-[#248acc]"
             >
               Home
             </a>
             <a
               href="#about"
-              className="text-base font-semibold transition-all duration-300 text-gray-800 hover:text-[#248acc]"
+              className="text-base lg:text-lg font-semibold transition-all duration-300 text-gray-800 hover:text-[#248acc]"
             >
               Chi Siamo
             </a>
             <a
               href="#products"
-              className="text-base font-semibold transition-all duration-300 text-gray-800 hover:text-[#248acc]"
+              className="text-base lg:text-lg font-semibold transition-all duration-300 text-gray-800 hover:text-[#248acc]"
             >
               Prodotti
             </a>
@@ -58,13 +58,13 @@ export default function Navbar({ scrolled, mobileMenuOpen, setMobileMenuOpen }: 
                 src={logoFondazione}
                 alt="Fondazione San Zeno"
                 className={`transition-all duration-500 ${
-                  scrolled ? 'h-8' : 'h-9'
+                  scrolled ? 'h-8 lg:h-9' : 'h-9 lg:h-10'
                 } w-auto`}
               />
             </a>
             <a
               href="#contact"
-              className="bg-[#248acc] text-white px-6 py-2.5 rounded-full text-base font-bold hover:bg-[#2f3031] transition-all duration-300 hover:shadow-lg"
+              className="bg-[#248acc] text-white px-6 py-2.5 lg:px-7 lg:py-3 rounded-full text-base lg:text-lg font-bold hover:bg-[#2f3031] transition-all duration-300 hover:shadow-lg"
             >
               Contatti
             </a>

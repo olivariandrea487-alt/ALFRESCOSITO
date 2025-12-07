@@ -33,11 +33,11 @@ export default function Products() {
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}
         >
-          <h2 className="text-4xl md:text-5xl font-display font-extrabold text-[#2f3031] mb-4 tracking-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-extrabold text-[#2f3031] mb-4 tracking-tight">
             I Nostri Prodotti
           </h2>
-          <div className="w-20 h-1 bg-[#2f3031] mx-auto rounded-full mb-6"></div>
-          <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed font-medium">
+          <div className="w-20 h-1 lg:w-24 lg:h-1.5 bg-[#2f3031] mx-auto rounded-full mb-6"></div>
+          <p className="text-lg md:text-xl lg:text-2xl text-gray-700 max-w-2xl mx-auto leading-relaxed font-medium">
             Dolci artigianali realizzati con passione e ingredienti di prima qualità
           </p>
         </div>
@@ -53,26 +53,26 @@ export default function Products() {
                 <img
                   src={panettoneImg}
                   alt="Panettone"
-                  className="w-72 h-auto group-hover:scale-105 transition-transform duration-700 ease-out drop-shadow-2xl"
+                  className="w-72 lg:w-80 h-auto group-hover:scale-105 transition-transform duration-700 ease-out drop-shadow-2xl"
                 />
               </div>
               <div>
-                <h3 className="text-3xl md:text-4xl font-display font-bold text-[#2f3031] mb-3 tracking-tight">
+                <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-[#2f3031] mb-3 tracking-tight">
                   Panettone
                 </h3>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-4 font-medium">
+                <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed mb-4 font-medium">
                   Dolce lievitato classico con canditi e uvetta, interamente realizzato manualmente
                 </p>
                 <div className="mb-6">
-                  <p className="text-base text-gray-600 mb-2 font-medium">
+                  <p className="text-base lg:text-lg text-gray-600 mb-2 font-medium">
                     <span className="font-bold text-[#F0A51F]">Ingredienti:</span> farina di frumento, zucchero, uova fresche, canditi, uvetta, lievito naturale, latte scremato in polvere, sale e aromi naturali
                   </p>
-                  <p className="text-base font-bold text-[#2f3031]">
+                  <p className="text-base lg:text-lg font-bold text-[#2f3031]">
                     Peso: 500g
                   </p>
                 </div>
-                <button className="inline-flex items-center justify-center gap-2 bg-[#248acc] text-white px-7 py-2.5 rounded-full text-base font-bold hover:bg-[#2f3031] transition-all duration-500 shadow-md hover:shadow-lg hover:scale-105">
-                  <ShoppingBag size={18} />
+                <button className="inline-flex items-center justify-center gap-2 bg-[#248acc] text-white px-7 py-2.5 lg:px-8 lg:py-3 rounded-full text-base lg:text-lg font-bold hover:bg-[#2f3031] transition-all duration-500 shadow-md hover:shadow-lg hover:scale-105">
+                  <ShoppingBag size={18} className="lg:w-5 lg:h-5" />
                   Richiedi Informazioni
                 </button>
               </div>
@@ -89,26 +89,26 @@ export default function Products() {
                 <img
                   src={cioccoloneImg}
                   alt="Cioccolone"
-                  className="w-72 h-auto group-hover:scale-105 transition-transform duration-700 ease-out drop-shadow-2xl"
+                  className="w-72 lg:w-80 h-auto group-hover:scale-105 transition-transform duration-700 ease-out drop-shadow-2xl"
                 />
               </div>
               <div>
-                <h3 className="text-3xl md:text-4xl font-display font-bold text-[#2f3031] mb-3 tracking-tight">
+                <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-[#2f3031] mb-3 tracking-tight">
                   Cioccolone
                 </h3>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-4 font-medium">
+                <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed mb-4 font-medium">
                   Dolce lievitato con gocce di cioccolato, completamente fatto a mano con passione
                 </p>
                 <div className="mb-6">
-                  <p className="text-base text-gray-600 mb-2 font-medium">
+                  <p className="text-base lg:text-lg text-gray-600 mb-2 font-medium">
                     <span className="font-bold text-[#883A93]">Ingredienti:</span> farina di frumento, zucchero, uova fresche, gocce di cioccolato al 13,2%, lievito naturale, latte scremato in polvere, sale e aromi naturali
                   </p>
-                  <p className="text-base font-bold text-[#2f3031]">
+                  <p className="text-base lg:text-lg font-bold text-[#2f3031]">
                     Peso: 500g
                   </p>
                 </div>
-                <button className="inline-flex items-center justify-center gap-2 bg-[#248acc] text-white px-7 py-2.5 rounded-full text-base font-bold hover:bg-[#2f3031] transition-all duration-500 shadow-md hover:shadow-lg hover:scale-105">
-                  <ShoppingBag size={18} />
+                <button className="inline-flex items-center justify-center gap-2 bg-[#248acc] text-white px-7 py-2.5 lg:px-8 lg:py-3 rounded-full text-base lg:text-lg font-bold hover:bg-[#2f3031] transition-all duration-500 shadow-md hover:shadow-lg hover:scale-105">
+                  <ShoppingBag size={18} className="lg:w-5 lg:h-5" />
                   Richiedi Informazioni
                 </button>
               </div>

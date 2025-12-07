@@ -33,7 +33,7 @@ export default function Hero() {
         <img
           src={character1}
           alt="Character"
-          className="w-32 md:w-52 lg:w-64 h-auto opacity-90 hover:scale-110 transition-transform duration-700 ease-out"
+          className="w-32 md:w-52 lg:w-72 h-auto opacity-90 hover:scale-110 transition-transform duration-700 ease-out"
           style={{
             transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)`,
           }}
@@ -44,7 +44,7 @@ export default function Hero() {
         <img
           src={character2}
           alt="Character"
-          className="w-32 md:w-52 lg:w-64 h-auto opacity-90 hover:scale-110 transition-transform duration-700 ease-out"
+          className="w-32 md:w-52 lg:w-72 h-auto opacity-90 hover:scale-110 transition-transform duration-700 ease-out"
           style={{
             transform: `translate(${-mousePosition.x * 0.5}px, ${-mousePosition.y * 0.5}px)`,
           }}
@@ -55,7 +55,7 @@ export default function Hero() {
         <img
           src={character3}
           alt="Character"
-          className="w-32 md:w-52 lg:w-64 h-auto opacity-90 hover:scale-110 transition-transform duration-700 ease-out"
+          className="w-32 md:w-52 lg:w-72 h-auto opacity-90 hover:scale-110 transition-transform duration-700 ease-out"
           style={{
             transform: `translate(${mousePosition.x * 0.7}px, ${mousePosition.y * 0.7}px)`,
           }}
@@ -66,7 +66,7 @@ export default function Hero() {
         <img
           src={character4}
           alt="Character"
-          className="w-32 md:w-52 lg:w-64 h-auto opacity-90 hover:scale-110 transition-transform duration-700 ease-out"
+          className="w-32 md:w-52 lg:w-72 h-auto opacity-90 hover:scale-110 transition-transform duration-700 ease-out"
           style={{
             transform: `translate(${-mousePosition.x * 0.8}px, ${-mousePosition.y * 0.8}px)`,
           }}
@@ -74,36 +74,36 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <div className="mb-8 animate-fade-in-up flex items-center justify-center gap-8 md:gap-12">
+        <div className="mb-8 animate-fade-in-up flex items-center justify-center gap-8 md:gap-12 lg:gap-14">
           <img
             src={logoPasta}
             alt="Pasta d'uomo"
-            className="h-16 md:h-20 w-auto drop-shadow-2xl hover:scale-105 transition-transform duration-700 ease-out"
+            className="h-16 md:h-20 lg:h-24 w-auto drop-shadow-2xl hover:scale-105 transition-transform duration-700 ease-out"
           />
           <img
             src={logoImbandita}
             alt="Imbandita"
-            className="h-16 md:h-20 w-auto drop-shadow-2xl hover:scale-105 transition-transform duration-700 ease-out"
+            className="h-16 md:h-20 lg:h-24 w-auto drop-shadow-2xl hover:scale-105 transition-transform duration-700 ease-out"
           />
         </div>
-        <p className="text-lg md:text-xl text-gray-700 mb-8 animate-fade-in-up animation-delay-400 max-w-2xl mx-auto leading-relaxed font-medium">
+        <p className="text-lg md:text-xl lg:text-2xl text-gray-700 mb-8 animate-fade-in-up animation-delay-400 max-w-2xl mx-auto leading-relaxed font-medium">
           Ingredienti di prima qualità per la tavola del riscatto
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-600">
+        <div className="flex flex-col sm:flex-row gap-4 lg:gap-5 justify-center animate-fade-in-up animation-delay-600">
           <a
             href="#brands"
-            className="group bg-[#248acc] text-white px-8 py-3 rounded-full text-base font-bold hover:bg-[#2f3031] transition-all duration-500 shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-0.5"
+            className="group bg-[#248acc] text-white px-8 py-3 lg:px-9 lg:py-3.5 rounded-full text-base lg:text-lg font-bold hover:bg-[#2f3031] transition-all duration-500 shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-0.5"
           >
             <span className="inline-flex items-center gap-2">
               Scopri i Nostri Progetti
-              <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 lg:w-5 lg:h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </span>
           </a>
           <a
             href="#about"
-            className="bg-[#2f3031] text-white px-8 py-3 rounded-full text-base font-bold hover:bg-[#248acc] transition-all duration-500 shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-0.5"
+            className="bg-[#2f3031] text-white px-8 py-3 lg:px-9 lg:py-3.5 rounded-full text-base lg:text-lg font-bold hover:bg-[#248acc] transition-all duration-500 shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-0.5"
           >
             Chi Siamo
           </a>
@@ -112,7 +112,7 @@ export default function Hero() {
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <svg
-          className="w-8 h-8 text-[#2f3031]"
+          className="w-8 h-8 lg:w-9 lg:h-9 text-[#2f3031]"
           fill="none"
           strokeLinecap="round"
           strokeLinejoin="round"

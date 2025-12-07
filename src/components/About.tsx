@@ -35,10 +35,10 @@ export default function About() {
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}
         >
-          <h2 className="text-4xl md:text-5xl font-display font-extrabold text-[#2f3031] mb-4 tracking-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-extrabold text-[#2f3031] mb-4 tracking-tight">
             Chi Siamo
           </h2>
-          <div className="w-20 h-1 bg-[#2f3031] mx-auto rounded-full"></div>
+          <div className="w-20 h-1 lg:w-24 lg:h-1.5 bg-[#2f3031] mx-auto rounded-full"></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -48,16 +48,16 @@ export default function About() {
             }`}
           >
             <div>
-              <h3 className="text-2xl md:text-3xl font-display font-bold text-[#2f3031] mb-5 tracking-tight">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-[#2f3031] mb-5 tracking-tight">
                 La Nostra Missione
               </h3>
-              <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-4 font-medium">
+              <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed mb-4 font-medium">
                 <strong>Cooperativa Sociale Panta Rei</strong>
               </p>
-              <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-4 font-medium">
+              <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed mb-4 font-medium">
                 "Alfresco - Il fuori dentro" è un progetto della Cooperativa Panta Rei che mette al primo posto la dignità della persona.
               </p>
-              <p className="text-base md:text-lg text-gray-700 leading-relaxed font-medium">
+              <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed font-medium">
                 Detenuti e detenute del Carcere di Verona prendono parte a due laboratori di produzione gastronomica "Pasta d'Uomo" e "Imbandita", pronti a riscattarsi grazie ai prodotti che fanno arrivare sulle nostre tavole.
               </p>
             </div>
@@ -68,22 +68,22 @@ export default function About() {
               isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
             }`}
           >
-            <div className="grid grid-cols-2 gap-5">
-              <div className="bg-[#2f3031] p-6 md:p-8 rounded-2xl text-white shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 hover:-translate-y-1">
-                <div className="text-4xl md:text-5xl font-display font-extrabold mb-2">100%</div>
-                <div className="text-sm md:text-base font-semibold opacity-90">Qualità Italiana</div>
+            <div className="grid grid-cols-2 gap-5 lg:gap-6">
+              <div className="bg-[#2f3031] p-6 md:p-8 lg:p-9 rounded-2xl text-white shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 hover:-translate-y-1">
+                <div className="text-4xl md:text-5xl lg:text-6xl font-display font-extrabold mb-2">100%</div>
+                <div className="text-sm md:text-base lg:text-lg font-semibold opacity-90">Qualità Italiana</div>
               </div>
-              <div className="bg-[#4a5568] p-6 md:p-8 rounded-2xl text-white shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 hover:-translate-y-1">
-                <div className="text-4xl md:text-5xl font-display font-extrabold mb-2">2</div>
-                <div className="text-sm md:text-base font-semibold opacity-90">Brand Eccellenti</div>
+              <div className="bg-[#4a5568] p-6 md:p-8 lg:p-9 rounded-2xl text-white shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 hover:-translate-y-1">
+                <div className="text-4xl md:text-5xl lg:text-6xl font-display font-extrabold mb-2">2</div>
+                <div className="text-sm md:text-base lg:text-lg font-semibold opacity-90">Brand Eccellenti</div>
               </div>
-              <div className="bg-[#5a6c7d] p-6 md:p-8 rounded-2xl text-white shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 hover:-translate-y-1">
-                <div className="text-4xl md:text-5xl font-display font-extrabold mb-2">20+</div>
-                <div className="text-sm md:text-base font-semibold opacity-90">Anni di Esperienza</div>
+              <div className="bg-[#5a6c7d] p-6 md:p-8 lg:p-9 rounded-2xl text-white shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 hover:-translate-y-1">
+                <div className="text-4xl md:text-5xl lg:text-6xl font-display font-extrabold mb-2">20+</div>
+                <div className="text-sm md:text-base lg:text-lg font-semibold opacity-90">Anni di Esperienza</div>
               </div>
-              <div className="bg-[#718096] p-6 md:p-8 rounded-2xl text-white shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 hover:-translate-y-1">
-                <div className="text-4xl md:text-5xl font-display font-extrabold mb-2">∞</div>
-                <div className="text-sm md:text-base font-semibold opacity-90">Passione</div>
+              <div className="bg-[#718096] p-6 md:p-8 lg:p-9 rounded-2xl text-white shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 hover:-translate-y-1">
+                <div className="text-4xl md:text-5xl lg:text-6xl font-display font-extrabold mb-2">∞</div>
+                <div className="text-sm md:text-base lg:text-lg font-semibold opacity-90">Passione</div>
               </div>
             </div>
           </div>
