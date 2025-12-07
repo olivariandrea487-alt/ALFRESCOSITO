@@ -18,7 +18,7 @@ export default function Navbar({ scrolled, mobileMenuOpen, setMobileMenuOpen }: 
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center">
+        <div className="flex items-center justify-between w-full">
           <a href="#" className="flex items-center group">
             <img
               src={logoAlfresco}
@@ -29,7 +29,7 @@ export default function Navbar({ scrolled, mobileMenuOpen, setMobileMenuOpen }: 
             />
           </a>
 
-          <div className="hidden md:flex items-center gap-10 ml-auto">
+          <div className="hidden md:flex items-center gap-10">
             <a
               href="#home"
               className="text-base font-semibold transition-all duration-300 text-gray-800 hover:text-[#248acc]"

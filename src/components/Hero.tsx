@@ -29,44 +29,44 @@ export default function Hero() {
     >
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMyZjMwMzEiIGZpbGwtb3BhY2l0eT0iMC4wMiI+PHBhdGggZD0iTTM2IDM0YzAtMi4yMS0xLjc5LTQtNC00cy00IDEuNzktNCA0IDEuNzkgNCA0IDQgNC0xLjc5IDQtNHptMC0xMmMwLTIuMjEtMS43OS00LTQtNHMtNCAxLjc5LTQgNCAxLjc5IDQgNCA0IDQtMS43OSA0LTR6bTEyLTEyYzAtMi4yMS0xLjc5LTQtNC00cy00IDEuNzktNCA0IDEuNzkgNCA0IDQgNC0xLjc5IDQtNHptMCAxMmMwLTIuMjEtMS43OS00LTQtNHMtNCAxLjc5LTQgNCAxLjc5IDQgNCA0IDQtMS43OSA0LTR6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-30"></div>
 
-      <div className="absolute top-[8%] left-[10%] animate-float hidden md:block">
+      <div className="absolute top-[8%] left-[5%] md:left-[10%] animate-float">
         <img
           src={character1}
           alt="Character"
-          className="w-52 md:w-60 lg:w-64 h-auto opacity-90 hover:scale-110 transition-transform duration-700 ease-out"
+          className="w-32 md:w-52 lg:w-64 h-auto opacity-90 hover:scale-110 transition-transform duration-700 ease-out"
           style={{
             transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)`,
           }}
         />
       </div>
 
-      <div className="absolute bottom-[15%] left-[12%] animate-float-delayed hidden md:block">
+      <div className="absolute bottom-[15%] left-[2%] md:left-[12%] animate-float-delayed">
         <img
           src={character2}
           alt="Character"
-          className="w-52 md:w-60 lg:w-64 h-auto opacity-90 hover:scale-110 transition-transform duration-700 ease-out"
+          className="w-32 md:w-52 lg:w-64 h-auto opacity-90 hover:scale-110 transition-transform duration-700 ease-out"
           style={{
             transform: `translate(${-mousePosition.x * 0.5}px, ${-mousePosition.y * 0.5}px)`,
           }}
         />
       </div>
 
-      <div className="absolute top-[15%] right-[10%] animate-float-slow hidden md:block">
+      <div className="absolute top-[15%] right-[5%] md:right-[10%] animate-float-slow">
         <img
           src={character3}
           alt="Character"
-          className="w-52 md:w-60 lg:w-64 h-auto opacity-90 hover:scale-110 transition-transform duration-700 ease-out"
+          className="w-32 md:w-52 lg:w-64 h-auto opacity-90 hover:scale-110 transition-transform duration-700 ease-out"
           style={{
             transform: `translate(${mousePosition.x * 0.7}px, ${mousePosition.y * 0.7}px)`,
           }}
         />
       </div>
 
-      <div className="absolute bottom-[12%] right-[12%] animate-float hidden md:block">
+      <div className="absolute bottom-[12%] right-[2%] md:right-[12%] animate-float">
         <img
           src={character4}
           alt="Character"
-          className="w-52 md:w-60 lg:w-64 h-auto opacity-90 hover:scale-110 transition-transform duration-700 ease-out"
+          className="w-32 md:w-52 lg:w-64 h-auto opacity-90 hover:scale-110 transition-transform duration-700 ease-out"
           style={{
             transform: `translate(${-mousePosition.x * 0.8}px, ${-mousePosition.y * 0.8}px)`,
           }}
