@@ -91,11 +91,11 @@ export default function Hero() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 lg:gap-5 justify-center animate-fade-in-up animation-delay-600">
           <a
-            href="#brands"
+            href="#/products"
             className="group bg-[#248acc] text-white px-8 py-3 lg:px-9 lg:py-3.5 rounded-full text-base lg:text-lg font-bold hover:bg-[#2f3031] transition-all duration-500 shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-0.5"
           >
             <span className="inline-flex items-center gap-2">
-              Scopri i Nostri Progetti
+              Scopri i Nostri Prodotti
               <svg className="w-4 h-4 lg:w-5 lg:h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

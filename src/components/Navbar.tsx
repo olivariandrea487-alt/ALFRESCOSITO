@@ -31,7 +31,7 @@ export default function Navbar({ scrolled, mobileMenuOpen, setMobileMenuOpen }: 
 
           <div className="hidden md:flex items-center gap-10 lg:gap-11">
             <a
-              href="#home"
+              href="#/"
               className="text-base lg:text-lg font-semibold transition-all duration-300 text-gray-800 hover:text-[#248acc]"
             >
               Home
@@ -43,7 +43,7 @@ export default function Navbar({ scrolled, mobileMenuOpen, setMobileMenuOpen }: 
               Chi Siamo
             </a>
             <a
-              href="#products"
+              href="#/products"
               className="text-base lg:text-lg font-semibold transition-all duration-300 text-gray-800 hover:text-[#248acc]"
             >
               Prodotti
@@ -83,7 +83,7 @@ export default function Navbar({ scrolled, mobileMenuOpen, setMobileMenuOpen }: 
         <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-xl">
           <div className="flex flex-col space-y-4 p-6">
             <a
-              href="#home"
+              href="#/"
               className="text-gray-800 hover:text-[#248acc] font-semibold py-2 transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
@@ -97,7 +97,7 @@ export default function Navbar({ scrolled, mobileMenuOpen, setMobileMenuOpen }: 
               Chi Siamo
             </a>
             <a
-              href="#products"
+              href="#/products"
               className="text-gray-800 hover:text-[#248acc] font-semibold py-2 transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
