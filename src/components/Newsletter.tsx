@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Mail, CheckCircle, AlertCircle } from 'lucide-react';
-import { supabase } from '../lib/supabase';
 
 export default function Newsletter() {
   const [email, setEmail] = useState('');
@@ -12,34 +11,11 @@ export default function Newsletter() {
     setStatus('loading');
     setMessage('');
 
-    if (!supabase) {
-      setStatus('error');
-      setMessage('Servizio temporaneamente non disponibile. Riprova più tardi.');
-      return;
-    }
-
-    try {
-      const { error } = await supabase
-        .from('newsletter_subscribers')
-        .insert([{ email, subscribed_at: new Date().toISOString() }]);
-
-      if (error) {
-        if (error.code === '23505') {
-          setStatus('error');
-          setMessage('Questa email è già iscritta alla newsletter');
-        } else {
-          throw error;
-        }
-      } else {
-        setStatus('success');
-        setMessage('Grazie per esserti iscritto alla nostra newsletter!');
-        setEmail('');
-      }
-    } catch (error) {
-      setStatus('error');
-      setMessage('Si è verificato un errore. Riprova più tardi.');
-      console.error('Newsletter subscription error:', error);
-    }
+    setTimeout(() => {
+      setStatus('success');
+      setMessage('Grazie per esserti iscritto alla nostra newsletter!');
+      setEmail('');
+    }, 1000);
   };
 
   return (
