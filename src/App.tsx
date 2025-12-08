@@ -43,7 +43,7 @@ function App() {
     return (
       <div className="min-h-screen bg-white">
         <SourceProtection />
-        <Navbar scrolled={scrolled} mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
+        <Navbar scrolled={true} mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
         <ProductsPage />
         <Footer />
       </div>
