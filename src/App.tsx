@@ -3,8 +3,6 @@ import Hero from './components/Hero';
 import BrandSection from './components/BrandSection';
 import About from './components/About';
 import Products from './components/Products';
-import Contact from './components/Contact';
-import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import ProductsPage from './pages/ProductsPage';
@@ -57,8 +55,6 @@ function App() {
         <About />
         <BrandSection />
         <Products />
-        <Contact />
-        <Newsletter />
       </main>
 
       <Footer />

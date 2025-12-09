@@ -1,12 +1,15 @@
 import { useEffect, useRef, useState } from 'react';
-import { ShoppingBag, BookOpen, X } from 'lucide-react';
+import { ShoppingBag, BookOpen } from 'lucide-react';
 import panettoneImg from '../assets/001-uai-258x262.png';
 import cioccoloneImg from '../assets/cioccolone-e1676326983381-uai-258x262.png';
 
 export default function Products() {
   const [isVisible, setIsVisible] = useState(false);
-  const [showCatalog, setShowCatalog] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
+
+  const openCatalog = () => {
+    window.open('https://www.cooperativapantarei.it/wp-content/uploads/2024/02/Brochure_prodotti_Panta_Rei.pdf', '_blank');
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -43,7 +46,7 @@ export default function Products() {
           </p>
           <div className="mt-8">
             <button
-              onClick={() => setShowCatalog(true)}
+              onClick={openCatalog}
               className="inline-flex items-center justify-center gap-3 bg-[#F0A51F] text-white px-8 py-4 rounded-full text-lg lg:text-xl font-bold hover:bg-[#2f3031] transition-all duration-500 shadow-lg hover:shadow-xl hover:scale-105"
             >
               <BookOpen size={24} />
@@ -126,29 +129,6 @@ export default function Products() {
           </div>
         </div>
       </div>
-
-      {showCatalog && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-lg w-full max-w-6xl h-[90vh] flex flex-col">
-            <div className="flex items-center justify-between p-4 border-b">
-              <h3 className="text-2xl font-bold text-[#2f3031]">Catalogo Prodotti Panta Rei</h3>
-              <button
-                onClick={() => setShowCatalog(false)}
-                className="p-2 hover:bg-gray-100 rounded-full transition-colors"
-              >
-                <X size={24} />
-              </button>
-            </div>
-            <div className="flex-1 overflow-hidden">
-              <iframe
-                src="https://www.cooperativapantarei.it/wp-content/uploads/2024/02/Brochure_prodotti_Panta_Rei.pdf"
-                className="w-full h-full"
-                title="Catalogo Prodotti"
-              />
-            </div>
-          </div>
-        </div>
-      )}
     </section>
   );
 }
