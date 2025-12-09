@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ShoppingBag } from 'lucide-react';
+import { ShoppingBag, BookOpen } from 'lucide-react';
 import panettoneImg from '../assets/001-uai-258x262.png';
 import cioccoloneImg from '../assets/cioccolone-e1676326983381-uai-258x262.png';
 
@@ -40,6 +40,17 @@ export default function Products() {
           <p className="text-lg md:text-xl lg:text-2xl text-gray-700 max-w-2xl mx-auto leading-relaxed font-medium">
             Dolci artigianali realizzati con passione e ingredienti di prima qualità
           </p>
+          <div className="mt-8">
+            <a
+              href="https://www.cooperativapantarei.it/wp-content/uploads/2024/02/Brochure_prodotti_Panta_Rei.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-3 bg-[#F0A51F] text-white px-8 py-4 rounded-full text-lg lg:text-xl font-bold hover:bg-[#2f3031] transition-all duration-500 shadow-lg hover:shadow-xl hover:scale-105"
+            >
+              <BookOpen size={24} />
+              Scarica il Catalogo Completo
+            </a>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-16 max-w-5xl mx-auto">
